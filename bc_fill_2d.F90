@@ -24,7 +24,7 @@ contains
     use eos_module
     use network, only: nspec
     use model_parser_module
-    use bl_error_module
+    use amrex_error_module
     use eos_type_module
 
     include 'AMReX_bc_types.fi'

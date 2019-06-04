@@ -125,7 +125,6 @@ subroutine ca_initdata(level,time,lo,hi,nscal, &
                        state,state_l1,state_l2,state_h1,state_h2, &
                        delta,xlo,xhi)
 
-  use bl_constants_module
   use probdata_module
   use interpolate_module
   use eos_module
@@ -243,8 +242,7 @@ subroutine ca_initrad(level,time,lo,hi,nrad, &
                       rad_state,rad_state_l1,rad_state_l2, &
                       rad_state_h1,rad_state_h2, &
                       delta,xlo,xhi)
-  
-  use bl_constants_module
+  use amrex_constants_module  
   use probdata_module
   use amrex_fort_module, only : rt => amrex_real
 
