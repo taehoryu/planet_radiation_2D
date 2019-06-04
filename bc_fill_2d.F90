@@ -31,11 +31,11 @@ contains
 
 
 
-    integer,  intent(in   ) :: adv_l1, adv_l2, adv_h1, adv_h2
-    integer,  intent(in   ) :: bc(2,2,*)
-    integer,  intent(in   ) :: domlo(2), domhi(2)
-    real(rt), intent(in   ) :: delta(2), xlo(2), time
-    real(rt), intent(inout) :: adv(adv_l1:adv_h1,adv_l2:adv_h2,NVAR)
+    integer :: adv_l1, adv_l2, adv_h1, adv_h2
+    integer :: bc(2,2,*)
+    integer :: domlo(2), domhi(2)
+    real(rt) :: delta(2), xlo(2), time
+    real(rt) :: adv(adv_l1:adv_h1,adv_l2:adv_h2,NVAR)
 
     integer i,j,q,n
     real(rt) y
