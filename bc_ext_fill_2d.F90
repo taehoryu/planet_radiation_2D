@@ -1,5 +1,5 @@
 module bc_ext_fill_module
-
+  use amrex_constants_module
   use meth_params_module, only : NVAR, URHO, UMX, UMY, UMZ, &
                                  UEDEN, UEINT, UFS, UTEMP, const_grav, &
                                  hse_zero_vels, hse_interp_temp, hse_reflect_vels, &
