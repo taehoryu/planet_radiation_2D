@@ -29,7 +29,7 @@ contains
 
     include 'AMReX_bc_types.fi'
 
-    implicit none
+
 
     integer,  intent(in   ) :: adv_l1, adv_l2, adv_h1, adv_h2
     integer,  intent(in   ) :: bc(2,2,*)
