@@ -362,7 +362,7 @@ contains
        do j=domhi(2)+1,rad_h2
           ! zero-gradient catch-all -- this will get the radiation
           ! energy
-          rad(rad_l1:rad_h1,j) = rad(rad_l1:rad_h1,domhi(3))
+          rad(rad_l1:rad_h1,j) = rad(rad_l1:rad_h1,domhi(2))
        enddo
     endif
 
