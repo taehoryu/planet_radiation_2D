@@ -1,12 +1,14 @@
 subroutine amrex_probinit (init,name,namlen,problo,probhi) bind(c)
 
-  use parallel
+  use amrex_paralleldescriptor_module, only: parallel_IOProcessor => amrex_pd_ioprocessor
   use probdata_module
   use model_parser_module
-  use bl_error_module
-  use bl_constants_module
+  use amrex_error_module
+  use amrex_constants_module
+
   use amrex_fort_module, only : rt => amrex_real
   use meth_params_module, only : const_grav
+
 
   implicit none
 
